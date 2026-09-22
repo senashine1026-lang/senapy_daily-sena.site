@@ -14,6 +14,10 @@
   font-family: "Zen Kaku Gothic New";
   src: url(fonts/ZenKakuGothicNew-Bold.ttf) formt("truetype");
 }
+@font-face {
+  font-family: "La Belle Aurore", cursive;
+  src: url("fonts/LaBelleAurore-Regular.ttf") format("truetype");
+}
 @keyframes infinity-scroll-left {
   from {
     transform: translateX(0);
@@ -21,6 +25,94 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+.trip {
+  position: relative;
+  width: 100%;
+  height: 375px;
+  background-color: #4d4d4d;
+  overflow: hidden;
+}
+
+.trip-images {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+}
+
+.trip-image {
+  position: absolute;
+  object-fit: cover;
+  display: block;
+}
+
+.trip-image-top {
+  width: 135px;
+  height: 138px;
+  top: 14px;
+  left: 62px;
+}
+
+.trip-image-bottom {
+  width: 211px;
+  height: 258px;
+  top: 103px;
+  left: 142px;
+}
+.trip-text {
+  position: absolute;
+  left: 61px;
+  bottom: 18px;
+  z-index: 2;
+}
+
+.trip-text p {
+  color: #f8f9fb;
+  font-family: cursive;
+  font-size: 30px;
+  font-style: Italic;
+}
+
+.tommorow {
+  position: relative;
+  width: 100%;
+  height: 424px;
+  background-color: #f8f9fb;
+}
+
+.tommorow-sentence {
+  position: absolute;
+  left: 7.5%;
+  top: 58px;
+  width: 230px;
+}
+
+.tommorow-sentence p {
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  margin-bottom: 27px;
+  white-space: nowrap;
+}
+
+.tommorow-sentence-big {
+  font-size: 30px;
+  margin-top: 37px;
+  margin-bottom: 31px;
 }
 
 .information-title {
