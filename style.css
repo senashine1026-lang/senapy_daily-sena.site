@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Zen Antique Soft";
+  src: url("fonts/ZenAntiqueSoft-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zen Kaku Gothic New";
+  src: url("fonts/ZenKakuGothicNew-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zen Kaku Gothic New";
+  src: url("fonts/ZenKakuGothicNew-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Zen Kaku Gothic New";
+  src: url(fonts/ZenKakuGothicNew-Bold.ttf) formt("truetype");
+}
 @keyframes infinity-scroll-left {
   from {
     transform: translateX(0);
@@ -5,6 +21,29 @@
   to {
     transform: translateX(-100%);
   }
+}
+
+.information-title {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 30px;
+  gap: 4px;
+}
+
+.information-number {
+  font-family: "Zen Kaku Gothic New";
+  font-size: 76px;
+  font-weight: 300;
+  color: #bbded6;
+}
+
+.information-text {
+  font-family: "Zen Kaku Gothic New";
+  font-size: 30px;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-top: 40px;
 }
 
 .scroll-infinity {
@@ -15,6 +54,7 @@
 .scroll-infinity_wrap {
   display: flex;
   overflow: hidden;
+  gap: 15px;
 }
 
 .scroll-infinity_list {
@@ -23,6 +63,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 15px;
 
   animation: infinity-scroll-left 20s linear infinite;
 }
@@ -30,6 +71,29 @@
 .scroll-infinity_item {
   width: 100vw/4;
   flex-shrink: 0;
+  position: relative;
+}
+
+.destination-name {
+  position: absolute;
+
+  left: 10px;
+  bottom: 30px;
+
+  margin: 0;
+  color: #f8f9fb;
+  font-family: "Zen Antique Soft";
+  font-size: 30px;
+}
+
+.destination-text {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  margin: 0;
+  color: #f8f9fb;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 10px;
 }
 
 .scroll-infinity_item img {
@@ -37,4 +101,18 @@
   height: 300px;
   object-fit: cover;
   display: block;
+}
+
+.buttom-sentence {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  padding-right: 60px;
+}
+
+.buttom-text {
+  text-align: right;
+  color: #3b3b3b;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 16px;
 }
