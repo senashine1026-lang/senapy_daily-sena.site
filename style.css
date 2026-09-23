@@ -15,7 +15,7 @@
   src: url(fonts/ZenKakuGothicNew-Bold.ttf) formt("truetype");
 }
 @font-face {
-  font-family: "La Belle Aurore", cursive;
+  font-family: "La Belle Aurore";
   src: url("fonts/LaBelleAurore-Regular.ttf") format("truetype");
 }
 @keyframes infinity-scroll-left {
@@ -39,168 +39,6 @@ body {
   min-height: 100%;
 }
 
-.tommorow {
-  position: relative;
-
-  width: 100%;
-  height: 405px;
-
-  background-color: #f8f9fb;
-
-  overflow: hidden;
-}
-
-/* =========================
-   左側の文章
-========================= */
-
-.tommorow-sentence {
-  position: absolute;
-
-  left: 8%;
-  top: 55px;
-
-  width: 230px;
-
-  z-index: 2;
-}
-
-.tommorow-sentence p {
-  margin: 0 0 27px;
-
-  color: #3b3b3b;
-
-  font-family: "Zen Kaku Gothic New";
-
-  font-size: 8px;
-  line-height: 1.8;
-
-  letter-spacing: 0.08em;
-}
-
-/* 「あの町に行きたい。」 */
-
-.tommorrw-sentence-big {
-  margin-top: 38px !important;
-  margin-bottom: 31px !important;
-
-  font-size: 10px !important;
-}
-
-/* =========================
-   右側の写真
-========================= */
-
-.tommorow-image {
-  position: absolute;
-
-  top: 48px;
-  right: 8%;
-
-  width: 52%;
-  height: 270px;
-
-  object-fit: cover;
-
-  display: block;
-
-  z-index: 1;
-}
-
-.information-title {
-  display: flex;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto 30px;
-  gap: 4px;
-}
-
-.information-number {
-  font-family: "Zen Kaku Gothic New";
-  font-size: 76px;
-  font-weight: 300;
-  color: #bbded6;
-}
-
-.information-text {
-  font-family: "Zen Kaku Gothic New";
-  font-size: 30px;
-  font-weight: 600;
-  color: #3b3b3b;
-  margin-top: 40px;
-}
-
-.scroll-infinity {
-  width: 100%;
-  overflow: hidden;
-}
-
-.scroll-infinity_wrap {
-  display: flex;
-  overflow: hidden;
-  gap: 15px;
-}
-
-.scroll-infinity_list {
-  display: flex;
-  flex-shrink: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 15px;
-
-  animation: infinity-scroll-left 20s linear infinite;
-}
-
-.scroll-infinity_item {
-  width: 100vw/4;
-  flex-shrink: 0;
-  position: relative;
-}
-
-.destination-name {
-  position: absolute;
-
-  left: 10px;
-  bottom: 30px;
-
-  margin: 0;
-  color: #f8f9fb;
-  font-family: "Zen Antique Soft";
-  font-size: 30px;
-}
-
-.destination-text {
-  position: absolute;
-  right: 10px;
-  bottom: 14px;
-  margin: 0;
-  color: #f8f9fb;
-  font-family: "Zen Kaku Gothic New";
-  font-size: 10px;
-}
-
-.scroll-infinity_item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  display: block;
-}
-
-.buttom-sentence {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 32px;
-  padding-right: 60px;
-}
-
-.buttom-text {
-  text-align: right;
-  color: #3b3b3b;
-  font-family: "Zen Kaku Gothic New";
-  font-size: 16px;
-}
-
 .header {
   position: absolute;
   z-index: 10;
@@ -208,18 +46,15 @@ body {
   left: 0;
   width: 100%;
   height: 37px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 60px;
-
   background-color: rgba(255, 255, 255, 0.15);
 }
 
 .header-copy {
-  color: #f8f9fb;
+  color: #4d4d4d;
   font-family: "Zen Kaku Gothic New";
   font-size: 10px;
   letter-spacing: 0.08em;
@@ -236,10 +71,6 @@ body {
   font-family: "Zen Kaku Gothic New";
   font-size: 9px;
 }
-
-/* =========================================
-   HERO
-========================================= */
 
 .hero {
   position: relative;
@@ -274,10 +105,6 @@ body {
   margin: 0;
 }
 
-/* =========================================
-   TOKYO
-========================================= */
-
 .tokyo {
   position: relative;
   width: 100%;
@@ -292,7 +119,7 @@ body {
   top: 20px;
 
   width: 38%;
-  height: 290px;
+  height: 400px;
 
   background: #4d4d4d;
 }
@@ -303,7 +130,7 @@ body {
   top: 2px;
 
   width: 43%;
-  height: 116px;
+  height: 150px;
 }
 
 .tokyo-main-image img {
@@ -391,10 +218,6 @@ body {
   font-size: 8px;
   line-height: 2.2;
 }
-
-/* =========================================
-   MAP
-========================================= */
 
 .map-section {
   position: relative;
@@ -529,10 +352,6 @@ body {
   background-color: #777;
 }
 
-/* =========================================
-   MAP PLACES
-========================================= */
-
 .map-place {
   position: absolute;
 
@@ -579,8 +398,6 @@ body {
   font-size: 6px;
 }
 
-/* position */
-
 .roma {
   top: 160px;
   right: 25%;
@@ -612,10 +429,6 @@ body {
   background-color: #4d4d4d;
   overflow: hidden;
 }
-
-/* =========================
-   画像エリア
-========================= */
 
 .trip-images {
   position: absolute;
@@ -673,7 +486,7 @@ body {
 
   color: #fff;
 
-  font-family: "La Belle Aurore", cursive;
+  font-family: "La Belle Aurore";
 
   font-size: 34px;
   line-height: 1.05;
@@ -711,8 +524,6 @@ body {
   text-align: right;
 }
 
-/* 上の文章 */
-
 .trip-message-small {
   margin-bottom: 35px;
 
@@ -726,143 +537,153 @@ body {
   margin: 0;
 }
 
-/* 下の文章 */
-
 .trip-message-big {
   margin: 0;
-
   color: #f5e9b0;
-
   font-size: 16px;
   line-height: 1.8;
-
   text-align: right;
 }
 
 .tommorow {
   position: relative;
-
   width: 100%;
-  height: 225px;
-
+  height: 405px;
   background-color: #f8f9fb;
+  overflow: hidden;
 }
 
 .tommorow-sentence {
   position: absolute;
-
   left: 8%;
-  top: 35px;
-
-  width: 40%;
+  top: 55px;
+  width: 230px;
+  z-index: 2;
 }
 
 .tommorow-sentence p {
+  margin: 0 0 27px;
+  color: #3b3b3b;
   font-family: "Zen Kaku Gothic New";
-  font-size: 7px;
-
+  font-size: 8px;
+  line-height: 1.8;
   letter-spacing: 0.08em;
-
-  margin-bottom: 10px;
-
-  white-space: nowrap;
 }
 
-.tommorow-sentence-big {
-  font-size: 12px !important;
-
-  margin-top: 22px;
-  margin-bottom: 16px !important;
+.tommorrw-sentence-big {
+  margin-top: 38px !important;
+  margin-bottom: 31px !important;
+  font-size: 10px !important;
 }
 
 .tommorow-image {
   position: absolute;
 
+  top: 48px;
   right: 8%;
-  top: 30px;
 
   width: 52%;
-  height: 150px;
-}
-
-.tommorow-image img {
-  width: 100%;
-  height: 100%;
+  height: 270px;
 
   object-fit: cover;
-}
 
-/* =========================================
-   INFORMATION
-========================================= */
+  display: block;
 
-.information {
-  position: relative;
-
-  width: 100%;
-
-  padding-top: 25px;
-
-  background: #f8f9fb;
+  z-index: 1;
 }
 
 .information-title {
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 30px;
+  gap: 4px;
 }
 
 .information-number {
-  font-size: 55px;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 76px;
+  font-weight: 300;
+  color: #bbded6;
 }
 
 .information-text {
-  font-size: 23px;
-  margin-top: 30px;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 30px;
+  font-weight: 600;
+  color: #3b3b3b;
+  margin-top: 40px;
 }
-
-/* =========================================
-   INFINITY SCROLL
-========================================= */
 
 .scroll-infinity {
   width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .scroll-infinity_wrap {
   display: flex;
-
-  width: max-content;
-
-  gap: 10px;
+  overflow: hidden;
+  gap: 15px;
 }
 
 .scroll-infinity_list {
   display: flex;
-
   flex-shrink: 0;
-
   list-style: none;
-
-  gap: 10px;
-
+  padding: 0;
+  margin: 0;
+  gap: 15px;
   animation: infinity-scroll-left 20s linear infinite;
 }
 
 .scroll-infinity_item {
-  position: relative;
-
-  width: calc(25vw - 8px);
-
+  width: 100vw/4;
   flex-shrink: 0;
+  position: relative;
+}
+
+.destination-name {
+  position: absolute;
+
+  left: 10px;
+  bottom: 30px;
+
+  margin: 0;
+  color: #f8f9fb;
+  font-family: "Zen Antique Soft";
+  font-size: 30px;
+}
+
+.destination-text {
+  position: absolute;
+  right: 10px;
+  bottom: 14px;
+  margin: 0;
+  color: #f8f9fb;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 10px;
 }
 
 .scroll-infinity_item img {
   width: 100%;
-  height: 150px;
-
+  height: 300px;
   object-fit: cover;
-
   display: block;
+}
+
+.buttom-sentence {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  padding-right: 60px;
+}
+
+.buttom-text {
+  text-align: right;
+  color: #3b3b3b;
+  font-family: "Zen Kaku Gothic New";
+  font-size: 16px;
 }
 
 .destination-name {
@@ -879,15 +700,9 @@ body {
   font-size: 5px;
 }
 
-/* =========================================
-   INFORMATION TEXT
-========================================= */
-
 .buttom-sentence {
   display: flex;
-
   justify-content: flex-end;
-
   margin-top: 20px;
 
   padding-right: 10%;
